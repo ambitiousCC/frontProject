@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+    <!-- 设置层高以后，对内容统统设置透明度，完成动画以后改变透明度出现文字 -->
+    <div class="contact">
+        <div class="contact-body" id="contact-bd">
+            <div class="contact-body-inner">
+                <div class="cbd-main-msg">
+                    <h2>We'd love to hear from you! Send us a message using the form opposite,or<a href="javascript:void(0)">
+                            email us.</a></h2>
+                </div>
+                <div class="cbd-main-banner">
+                    <div class="cbd-main-banner-tel">
+                        <div id="cbd-main-banner-tel-position">
+                            <h4>Leeds (HQ)</h4>
+                            <p>The Old Brewery,</p>
+                            <p>Leeds,LS2 7ES</p>
+                            <p><a href="javascript:void(0)" class="tel">+44 (0)133 322 6477</a></p>
+                        </div>
+                        <div id="cbd-main-banner-tel-email">
+                            <h4>Say hello</h4>
+                            <p><a href="javascript:void(0)" class="tel">info@parall.ax</a></p>
+                        </div>
+                    </div>
+                    <div class="cbd-main-banner-pos">
+                        <div id="cbd-main-banner-pos-position">
+                            <h4>London</h4>
+                            <p>3rd Floor</p>
+                            <p>6 Duke Street</p>
+                            <p>Marylebone</p>
+                            <p>London,W1U 3EN</p>
+                            <p><a href="javascript:void(0)" class="tel">+44(0)113 322 6477</a></p>
+                        </div>
+                        <div class="cbd-main-banner-pos-btn btn0 btn1">
+                            <div class="btn-banner" id="cbg-main-banner-pos-btn-submit">Send us a brief</div>
+                            <div class="btn-bg" id="cbg-main-banner-pos-btn-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-tip">
+            <!-- 猜测方法：在body里面添加样式 -->
+            <!-- 想到一种思路就是：设置透明度 -->
+            <!-- 思路：先display none 将文字显示在输入框正上方；移入cursor text ;点击：文字移动以后display block; -->
+            <div class="contact-tip-inner">
+                <div class="contact-btn btn0">
+                    <div id="contact-btn-close" class="btn-banner">close</div>
+                    <div id="contact-btn-bg" class="btn-bg"></div>
+                </div>
+                <div class="cbd-tip-textarea">
+                    <form action="#" method="post" id="cbd-tip-textarea-form">
+                        <div class="cbd-tip-textarea-hidden">
+                            <span>Name*</span>
+                            <input type="text" name="name" class="postarea">
+                        </div>
+                        <div class="cbd-tip-textarea-hidden">
+                            <span>Email address*</span>
+                            <input type="text" name="emailaddress" class="postarea">
+                        </div>
+                        <div class="cbd-tip-textarea-hidden">
+                            <span>Telephone</span>
+                            <input type="text" name="telephone" class="postarea">
+                        </div>
+                        <div id="cbd-tip-textarea-hidden-post">
+                            <span>Your message*</span>
+                            <textarea name="yosurmessage" id="postarea-text" cols="68" rows="7"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="cbd-tip-btn btn0">
+                    <div class="btn-banner" id="cbd-tip-btn-submit">Send.</div>
+                    <div class="btn-bg" id="cbd-tip-btn-bg"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-scroll"></div>
+    </div>
+    <script src="js/common.js"></script>
+    <script src="js/common3.js"></script>
+</body>
+
+</html>

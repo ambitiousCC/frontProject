@@ -1,0 +1,249 @@
+/*
+ * @Author: cuiqin 
+ * @Date: 2019-01-19 16:52:20 
+ * @Last Modified by: cuiqin
+ * @Last Modified time: 2019-01-23 18:48:47
+ */
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+/* 全局按钮 */
+
+
+/* contact-body */
+
+.contact {
+    position: relative;
+    height: 100%;
+}
+
+.contact-body,
+.contact-tip {
+    width: 50%;
+    height: 100%;
+}
+
+.contact-body {
+    float: left;
+    position: relative;
+    opacity: 0;
+}
+
+
+/* 左边 */
+.contact-body-inner {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    right: 0;
+    margin-top: 30%;
+}
+
+.cbd-main-msg {
+    margin-top: -10%;
+    width: 70%;
+}
+
+.cbd-main-msg h2 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+    color: #8b53dd;
+}
+
+.cbd-main-msg h2 a {
+    color: #8b53dd;
+    text-decoration: none;
+    border-bottom: 1px #8b53dd dashed;
+}
+
+.cbd-main-banner {
+    width: 70%;
+    margin-top: 40px;
+    color: #5f5f5f;
+}
+
+.cbd-main-banner-tel,
+.cbd-main-banner-pos {
+    width: 50%;
+}
+
+.cbd-main-banner-tel {
+    float: left;
+}
+
+#cbd-main-banner-tel-position,
+#cbd-main-banner-pos-position {
+    height: 240px;
+}
+
+#e-mail,
+#cbd-main-banner-tel-position p,
+#cbd-main-banner-pos-position p {
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.cbd-main-banner-pos {
+    margin-left: 50%;
+}
+
+.cbd-main-banner h4 {
+    font-size: 1rem;
+}
+
+.cbd-main-banner-pos-btn {
+    /* 这是一个与众不同的按钮：开始有边框 */
+    height: 83px;
+    width: 158px;
+    background: #8b53dd;
+}
+
+#cbg-main-banner-pos-btn-submit {
+    color: #fff;
+    border: 2px solid #8b53dd;
+}
+
+#cbg-main-banner-pos-btn-bg {
+    background: #fff;
+}
+
+.tel {
+    color: #5f5f5f;
+    text-decoration: none;
+}
+
+
+/* 右边 */
+
+.contact-btn {
+    right: -25%;
+    top: -45%;
+    margin-top: -20px;
+    height: 80px;
+    width: 156px;
+}
+
+#contact-btn-close {
+    color: #fff;
+    border: 2px #787385 solid;
+}
+
+#contact-btn-bg {
+    background: #000000;
+}
+
+.contact-tip {
+    position: relative;
+    margin-left: 50%;
+    height: 120%;
+    background: #3e3750;
+}
+
+.contact-tip-inner {
+    position: absolute;
+    width: 700px;
+    height: 500px;
+    left: 0;
+    margin-top: 30%;
+}
+
+
+/* 点击文字出现输入框 */
+/* 点击事件：点击文字，文字运动上移并
+动态添加一个input标签
+如果标签里面有文字，不删除标签
+没有就删除 
+
+或者取消display属性
+
+*/
+.cbd-tip-textarea{
+    position: absolute;
+    right: 0;
+    margin-top: -15%;
+    width: 70%;
+    height: 488px;
+}
+.cbd-tip-textarea span{
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: block;
+    padding-top:50px; 
+    color: #fff;
+}
+
+.postarea {
+    width: 100%;
+    height: 30px;
+    margin-top:-30px;
+    display: none;
+}
+#postarea-text {
+    width: 100%;
+    height: 105px;
+    margin-top: -30px;
+    display: none;
+}
+
+.cbd-tip-textarea-hidden {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px #787385 solid;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-filter: alpha(opacity=0);
+}
+#cbd-tip-textarea-hidden-post{
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px #787385 solid;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-filter: alpha(opacity=0);
+}
+
+.cbd-tip-btn {
+    height: 80px;
+    width: 156px;
+    right: 0;
+    bottom: -40px;
+}
+#cbd-tip-btn-submit {
+    color: #fff;
+    border: 2px #787385 solid;
+}
+#cbd-tip-btn-bg{
+    background: #fff;
+}
+
+.btn0{
+    position: absolute;
+    font-size:0.9rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-banner{
+    position: absolute;
+    width: 156px;
+    height: 80px;
+    line-height: 80px;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0);
+}
+.btn-bg {
+    /* a */
+    width: 158px;
+    /* b */
+    margin-top: 83px;
+    /* c */
+    height: 0;
+    border: none;
+    /* z-index: 1; */
+}

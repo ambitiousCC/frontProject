@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://apps.bdimg.com/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/markdown-css.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row-fluid" id="container-btns">
+            <input type="button" value="step1:点击选择文件" id="chosebtn">
+            <input type="button" id="btn" onclick="rec()" value="step2:转换">
+        </div>
+        <textarea id="show" spellcheck="true"></textarea>
+        <input type="file" id="filechose">
+        <div class="span10" id="container-link">
+            <a href="#" id="demo">step3:下载新的文件</a>
+        </div>
+    </div>
+
+    <script src="js/z-markdown-js.js"></script>
+</body>
+
+</html>

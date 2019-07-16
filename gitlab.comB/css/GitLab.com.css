@@ -1,0 +1,270 @@
+/* 总体布局 */
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-weight: normal;
+}
+
+p {
+	color: dimgrey;
+}
+
+a {
+	color: steelblue;
+}
+
+a:link {
+	/*链接状态*/
+	color: steelblue;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a:hover {
+	/*选中链接后的状态*/
+	text-decoration: underline;
+}
+
+a.z {
+	font-weight: 400;
+}
+
+/* 导航栏 */
+#header {
+	background-color: white;
+	position: fixed;
+	width: -webkit-fill-available;
+	height: 37px;
+	text-align: center;
+	border-bottom: thin lightgray solid;
+	z-index: 999;
+}
+
+#header-ph {
+	/* 顶部logo */
+	height: 37px;
+}
+
+#header-ph img {
+	padding: 5px;
+}
+
+/* 左边文字 */
+#txt {
+	font-weight: 400;
+	font-size: 15px;
+	height: 800;
+	width: 485px;
+	top: 122px;
+	left: 0px;
+	right: 870px;
+	bottom: 64px;
+	position: absolute;
+	z-index: 1;
+	padding: 10px;
+	padding-left: 300px;
+}
+
+#txt p {
+	/* 内容 */
+	line-height: 2;
+	padding: 13px 0px;
+}
+
+#txt li {
+	line-height: 2;
+	font-size: 18px;
+}
+
+#txt ul {
+	padding-left: 30px;
+}
+
+#txt a {
+	font-size: 18px;
+}
+
+/* #header img{
+	text-decoration: underline;
+}
+#header{
+	left: 50%;
+	height: 1px;
+	background-color: black;
+	z-index: 999;
+}
+#header{
+	background-color:white;
+	margin-left:0%;
+	height: 35px;
+	border-bottom: thin lightgray solid;
+	color: white;
+}
+#header{
+	position: fixed;
+	margin: 0 auto; */
+}
+
+#content {
+	width: -webkit-fill-available;
+
+}
+
+#sign {
+	/* 模拟表单 */
+	align-content: center;
+	height: 540px;
+	top: 174px;
+	right: 512px;
+	bottom: 270px;
+	line-height: 30px;
+}
+
+.sign-form {
+	font-weight: 500;
+	font-size: small;
+	line-height: 3;
+}
+
+#signs {
+	height: 176px;
+	top: 730px;
+	right: 517;
+	bottom: 72px;
+	line-height: 35px;
+	color: black;
+	font-size: small;
+}
+
+#signs,
+#sign {
+	position: absolute;
+	border: 1px;
+	border-style: solid;
+	border-color: lightgray;
+	border-width: thin;
+	padding-left: 12px;
+	left: 862px;
+	width: 360px;
+}
+
+#sign-txt {
+	color: black;
+	font-size: small;
+	line-height: 2;
+}
+
+#sign-txt-dg {
+	font-size: small;
+	font-weight: 500;
+	color: darkgray;
+}
+
+span.xx,
+span.xy {
+	/* 假的切换键 */
+	font-size: 15px;
+	font-weight: 600;
+	border: 1px;
+	border-spacing: 0px;
+	border-style: solid;
+	z-index: 1;
+	font-weight: 500;
+	line-height: 50px;
+	position: absolute;
+	bottom: 734px;
+	top: 127px;
+	height: 45px;
+	text-align: center;
+	width: 185px;
+	margin-left: -182px;
+	border-color: lightgray;
+}
+
+span.xx {
+	color: darkgrey;
+	left: 1044px;
+	right: 692px;
+	background-color: #fafafa;
+}
+
+span.xy {
+	left: 1230px;
+	right: 505px;
+	border-bottom-width: thick;
+}
+
+.xx:hover {
+	border-bottom-width: thick;
+	cursor: pointer;
+}
+
+.xy:hover {
+	cursor: pointer;
+	border-bottom-color: #6666c4;
+	border-bottom-width: thick;
+}
+
+#submit {
+	/* 按钮 */
+	width: 340px;
+	height: 32px;
+	background-color: #1AAA55;
+	color: white;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+#signs-btn1,
+#signs-btn2,
+#signs-btn3,
+#signs-btn4 {
+	/* 四个小按钮,暂时用图片做按钮*/
+	width: 168px;
+	height: 38px;
+	border-color: lightgray;
+	cursor: pointer;
+}
+
+#signs-btn1 {
+	background-image: url(../images/2.png);
+}
+
+#signs-btn2 {
+	background-image: url(../images/3.png);
+}
+
+#signs-btn3 {
+	background-image: url(../images/4.png);
+}
+
+#signs-btn4 {
+	background-image: url(../images/5.png);
+}
+
+/* 底部 */
+#footer {
+	position: absolute;
+	height: 100px;
+	width: -webkit-fill-available;
+	top: 906px;
+	border-top: lightgray solid 1px;
+	padding-left: 20%;
+	font-size: 80%;
+	word-spacing: 1.5em;
+}
+
+#footer p {
+	padding-top: 20px;
+}
+
+#footer-td {
+	/* 第三个单词的缩进 */
+	word-spacing: normal;
+	font-weight: normal;
+}

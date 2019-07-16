@@ -1,0 +1,305 @@
+/*
+ * css文件
+ * @Author: cuiqin 
+ * @Date: 2019-01-18 16:35:00 
+ * @Last Modified by: cuiqin
+ * @Last Modified time: 2019-01-23 21:31:12
+ *
+ */
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('..fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('..fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+        url('..fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+        url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+        url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+        url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fa {
+    color: #8b5cdd;
+}
+
+.fa-genderless {
+    color: white;
+}
+
+.nav-left {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    z-index: 9;
+    border-right: 1px solid #eaeaea;
+}
+
+.nav-left-body {
+    position: relative;
+    height: 100%;
+    margin: 0 30% auto;
+}
+
+.nav-left-icon,
+.nav-left-login {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.nav-left-icon-inner {
+    position: absolute;
+    left: 12.5%;
+    top: 30%;
+    width: 80px;
+    margin: auto;
+}
+
+.nav-left-login ul {
+    position: absolute;
+    top: 30%;
+    left: 12.5%;
+    margin: auto;
+    width: 80px;
+    height: 272px;
+}
+
+.nav-left-login ul li {
+    width: 100%;
+    line-height: 60px;
+}
+
+/* 顶部&变形导航栏 */
+
+.nav-top {
+    width: 100%; 
+    height: 240px;
+    position: relative;
+}
+
+.nav-auto {
+    position: absolute;
+    float: left;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nav-auto-inner {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 80%;
+    /*700px*/
+    height: 80px;
+    /*240px*/
+}
+
+.nav-auto ul {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    margin: 0% auto;
+}
+
+.nav-auto-inner ul li {
+    float: left;
+    line-height: 80px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    height: 60px;
+    border: none;
+    margin-left: 5px;
+}
+
+#nav-auto-inner-ul .nav-auto-bottom {
+    height: 1px;
+    background: #8b5cdd;
+    border: none;
+    position: absolute;
+    top: 59px;
+    width: 0;
+}
+
+/* **全局** 按钮 */
+.nav-cbtn-bg {
+    position: absolute;
+    right: 3%;
+    top: 30%;
+    height: 80px;
+    width: 156px;
+    margin-left: 80%;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.btn-banner {
+    position: absolute;
+    height: 80px;
+    width: 156px;
+    text-align: center;
+    line-height: 80px;
+    color: #8d5cdd;
+    /* 遮罩 */
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid #dccef5;
+    z-index: 2;
+}
+
+.btn-bg {
+    margin-top: 83px;
+    height: 0px;
+    width: 158px;
+    background: #8b5cdd;
+    border: none;
+    z-index: 1;
+}
+
+/* 主体部分 */
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+/* 左侧选择卡 */
+#main-guild {
+    display: flex;
+    float: left;
+    position: fixed;
+    top: 245px;
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.main-guild-inner {
+    width: 20%;
+    height: 40%;
+}
+
+.main-guild-inner ul {
+    margin-left: 100px;
+}
+
+.main-guild-inner-bg {
+    float: left;
+    position: relative;
+    height: 20px;
+}
+
+.main-guild-inner-line {
+    /* 0-30 */
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    background: #a0a0a0;
+}
+
+.main-guild-inner-lists {
+    /* 70 55 100 45 */
+    /* 22   40 */
+    margin-left: 22px;
+    width: 50px;
+    height: 20px;
+}
+
+.main-guild-inner-lists a {
+    color: #373737;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-decoration: none;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.main-guild-inner li {
+    height: 20px;
+    margin-top: 20px;
+}
+
+
+/* 右侧图片 */
+#main-banner {
+    /* 动态修改width marginLeft marginTop */
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 0px;
+    height: 100%;
+}
+
+.main-banner-inner {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-banner-inner-lists {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* 由于优先级，注意不遮住图片 */
+.main-banner-inner-list-txt {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.5;
+    /* 修改这里的透明度 */
+    background-color: rgba(3, 3, 3, 0.1);
+}
+
+.main-banner-inner-list-txt-title {
+    padding-top: 50%;
+    padding-left: 5%;
+    font-size: 2rem;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-filter: alpha(opacity=0);
+}
+
+.main-banner-inner-list-txt-content {
+    padding-left: 5%;
+    font-size: 1.2rem;
+    display: block;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-filter: alpha(opacity=0);
+}
+
+.main-banner-inner-list-txt-content span {
+    display: block;
+}
+
+.main-banner-img img {
+    width: 100%;
+}
+
+/* iframe */
+#iframe0 {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    margin-top: -1000px;
+    z-index: 99;
+    /* display: none; */
+}
+
+/* 待解决问题：动画效果
+先下移 同时none 再100%(需要自建函数) 再透明度--左边的设置透明度--设置 */

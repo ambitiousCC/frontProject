@@ -1,0 +1,999 @@
+* {
+	/*删除内外边距*/
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+li {
+	list-style-type: none;
+}
+
+.changeY {
+	display: none;
+}
+
+@font-face {
+	/*声明字体*/
+	font-family: 'icomoon';
+	/*自定义名称*/
+	src: url('../fonts/icomoon.eot?6khv39');
+	src: url('../fonts/icomoon.eot?6khv39#iefix')format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?6khv39')format('truetype'),
+		url('fonts/icomoon.woff?6khv39') format('woff'),
+		url('../fonts/icomoon.svg?6khv39#icomoon')format('svg');
+	font-weight: normal;
+	/*字体粗细正常*/
+	font-style: normal;
+	/*字体正常*/
+}
+
+/* 特殊字体的声明 */
+.ui-front0,
+.ui-front1,
+.ui-front2,
+.ui-front3,
+.ui-front4 {
+	font-family: "icomoon";
+}
+
+/* 导航栏 */
+#nav {
+	width: -webkit-fill-available;
+	background-color: #FFFFFF;
+}
+
+#nav-inner {
+	width: -webkit-fill-available;
+	height: 54px;
+	overflow: hidden;
+}
+
+#nav-inner-left {
+	text-align: center;
+	line-height: 54px;
+	margin-left: 8%;
+	height: 54px;
+	width: 294px;
+	float: left;
+}
+
+#nav-inner-left img {
+	width: 108px;
+	height: 23px;
+	padding: 15px 10px;
+}
+
+#nav-inner-left-text {
+	width: 160px;
+	height: 54px;
+	float: right;
+	font-size: -webkit-calc(120%);
+	line-height: 54px;
+}
+
+.nav-inner-left_ {
+	width: 40px;
+	height: 54px;
+	border-left: 2px black solid;
+}
+
+.nav-inner-left_wd {
+	width: 120px;
+	height: 54px;
+	float: right;
+}
+
+/* 关键是右边 */
+#nav-inner-right {
+	margin-right: 8%;
+	float: right;
+}
+
+.nav-inner-right-0-lists {
+	/* 这里是右边搜索和登录两个按钮 */
+	height: 54px;
+	font-size: 14px;
+	float: left;
+	line-height: 54px;
+}
+
+/* 导航栏右边三个按钮 */
+#nav-inner-right-0-list {
+	width: 125px;
+}
+
+#nav-inner-right-0-list1 {
+	width: 65px;
+}
+
+/*
+#nav-inner-right-0-list2 a:hover{
+	color: blue;
+	-webkit-transition: .5s;
+}
+*/
+/* 中间插入的按钮们 */
+#nav-inner-input-list {
+	width:
+		/* 65% */
+		100%;
+	height: 54px;
+	line-height: 54px;
+}
+
+#nav-inner-input-list-0 {
+	width:
+		/* 114px */
+		/* 9% */
+		6%;
+	margin-left:
+		/* 20px */
+		/* 1.6% */
+		1%;
+}
+
+#nav-inner-input-list-1 {
+	width:
+		/* 74px */
+		/* 6% */
+		3.8%;
+}
+
+#nav-inner-input-list-2 {
+	width:
+		/* 105px */
+		/* 8.4% */
+		5.4%;
+}
+
+#nav-inner-input-list-3 {
+	width:
+		/* 74px */
+		/* 6% */
+		3.8%;
+}
+
+#nav-inner-input-list-4 {
+	width:
+		/* 84px */
+		/* 6.7% */
+		4.3%;
+}
+
+#nav-inner-input-list-6 {
+	width:
+		/* 83px */
+		/* 6.6% */
+		4.3%;
+}
+
+#nav-inner-input-list-5 {
+	text-align: center;
+	width:
+		/* 124px */
+		/* 10% */
+		8%;
+}
+
+/* 没有下拉菜单的按钮 */
+.disdropbtn {
+	display: block;
+	text-align: center;
+}
+
+/* .disdropbtn:hover{
+	text-decoration: underline;
+} */
+/* 特殊的按钮 */
+#nav-inner-input-list-5 span {
+	height: 30px;
+	padding: 4px;
+	border: 1px black solid;
+	border-radius: 5px;
+}
+
+/* .disdropbtn_sp:hover{
+	text-decoration: underline;
+} */
+/* 中间插入的按钮们的总样式 */
+.nav-inner-input-list-x {
+	float: left;
+	width: 54px;
+	font-size: 14px;
+}
+
+/* 导航栏所有的按钮的聚焦属性 */
+/* .clickon{
+	background-color: #F2F2F2;
+	box-shadow: 0px 1px 10px 1px deepskyblue;
+	text-decoration: underline;
+} */
+/* 所有按钮 */
+.nav-dropbtn {
+	display: block;
+	text-align: center;
+}
+
+/* 实现下拉菜单的关键样式,隐藏 */
+.nav-dropdown-content {
+	display: none;
+	position: absolute;
+	overflow: auto;
+	z-index: 1;
+}
+
+/* 所有的下拉菜单中的超链接聚焦样式 */
+/* .nav-dropdown-content a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+} */
+/* 中间的按钮们的总样式 */
+.nav-inner-input-list-btn,
+.nav-right-0-list-btn {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	height: 54px;
+}
+
+/* 这里是部分真二八经的按钮的聚焦样式 */
+.show {
+	display: block;
+}
+
+/* 好了,下面是所有的下拉菜单的样式 */
+/* 左边的大框架 */
+#nav-dropdown-a {
+	width: 1230px;
+	background-color: #F2F2F2;
+	height: 400px;
+	margin-left: -1023px;
+}
+
+.nav-list {
+	float: left;
+}
+
+/* 上 */
+#nav-inner-right-0-list-0-dropdown-list-0 {
+	width: 100%;
+	height: 40px;
+	border-bottom: 2px #D3D3D3 solid;
+}
+
+.nav-dropdown-content {
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+#lists0 li {
+	float: left;
+	margin-left: 50px;
+}
+
+/* 中 */
+#nav-inner-right-0-list-0-dropdown-list-1 {
+	width: 100%;
+	height: 300px;
+}
+
+.lists1 {
+	width: 16%;
+	float: left;
+	height: 300px;
+	line-height: 3.2;
+}
+
+.lists1 a {
+	/* 设置成为块级元素独占一行 */
+	display: block;
+}
+
+/* 下 */
+#nav-inner-right-0-list-0-dropdown-list-2 {
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px black solid;
+	background-color: #E6E6E6;
+}
+
+/* 中间第一个开始 */
+/* 功能按钮 */
+#nav-dropdown-b {
+	width: 616px;
+	height: 304px;
+	background-color: #F2F2F2;
+	border-bottom: 2px black solid;
+}
+
+.lists2 {
+	float: left;
+	width: 30%;
+	line-height: 3;
+}
+
+.lists2 a {
+	display: block;
+}
+
+/* 产品/服务 */
+#nav-inner-input-list-2-dropdown-list {
+	width: 255px;
+	height: 263px;
+	background-color: #F2F2F2;
+	border-bottom: 2px black solid;
+}
+
+.lists3 ul {
+	line-height: 3.5;
+}
+
+/* 显示的下拉菜单应该有浮动 */
+.lists3 a {
+	display: block;
+}
+
+.lists3 span {
+	margin-left: 20px;
+}
+
+/* .lists3 a:hover,.lists4 a:hover{
+	background-color: #E6E6E6;
+	-webkit-transition: .5s;
+} */
+/* 支持 */
+.lists4 {
+	height: 158px;
+	width: 255px;
+	background-color: #F2F2F2;
+	border-bottom: 2px black solid;
+}
+
+.lists4 ul {
+	line-height: 3.5;
+}
+
+.lists4 a {
+	display: block;
+}
+
+.lists4 span {
+	margin-left: 20px;
+}
+
+/* 图片+切换功能 */
+#header {
+	width: -webkit-fill-available;
+	background: linear-gradient(to right, white, #865FC5);
+	height: 657px;
+}
+
+#header-inner {
+	width: -webkit-fill-available;
+	height: 657px;
+}
+
+#header-inner-content {
+	/* 左边按钮+logo */
+	margin-left: 20%;
+	height: 657px;
+	float: left;
+	width: 35%;
+}
+
+#header-inner-content-icon {
+	margin-top: 18%;
+}
+
+#header-inner-content-icon img {
+	width: 60px;
+	height: 60px;
+}
+
+#header-inner-content-icon h1 {
+	margin-top: 5%;
+	font-size: 2.75rem;
+	font-weight: 500;
+}
+
+#header-inner-content-guilde {
+	height: 14%;
+	margin-top: 5%;
+}
+
+#header-inner-content-guilde h2 {
+	font-weight: 300;
+	font-size: 1.25rem;
+}
+
+/* 切换总样式的按钮 */
+#header-inner-content-guilde-btn-0 {
+	margin-top: 10%;
+	margin-left: 5px;
+}
+
+#header-inner-content-guilde-btn-0 button {
+	color: #865FC5;
+}
+
+/* #header-inner-content-guilde-btn-0 button:hover{
+	cursor: pointer;
+} */
+#header-inner-content-guilde-btn-0-1,
+#header-inner-content-guilde-btn-0-2 {
+	margin-left: -5px;
+	width: 100px;
+	height: 35px;
+	border: 1px #865FC5 solid;
+}
+
+/* 对于按钮颜色改变的样式 */
+.active {
+	background-color: white;
+	text-decoration: underline;
+}
+
+/* 下拉按钮样式 */
+.header-inner-content-guilde-dropdown-dropbtn {
+	margin-top: 20%;
+	background-color: #0067B8;
+	padding: 13.5px 25px;
+	color: white;
+	font-size: 18px;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+/* 容器 <div> - 需要定位下拉内容 */
+#header-inner-content-guilde-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+#header-inner-content-guilde-dropdown-list {
+	text-align: center;
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 210px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+}
+
+#header-inner-content-guilde-dropdown-list0 {
+	letter-spacing: 1px;
+}
+
+#header-inner-content-guilde-dropdown-list1 {
+	letter-spacing: 1px;
+}
+
+/* 下拉菜单的链接 */
+#header-inner-content-guilde-dropdown-list a {
+	font-size: 18px;
+	color: black;
+	padding: 13.5px 20px;
+	text-decoration: none;
+	display: block;
+	border: 1px #C2C2C2 solid;
+}
+
+/* #header-inner-content-guilde-dropdown-list a:hover{
+	background-color: #0067B8;
+	color: white;
+	-webkit-transition: 0.5s;
+			} */
+/* 在鼠标移上去后显示下拉菜单 */
+/* .header-inner-content-guilde-dropdown:hover #header-inner-content-guilde-dropdown-list {
+	display: block;
+} */
+#header-inner-photo {
+	margin-left: 54%;
+	height: 100%;
+	position: relative;
+}
+
+#header-inner-photo img {
+	margin-right: 0%;
+	float: right;
+	bottom: 0;
+	/* 切换键改变图片的css样式的地方 */
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+}
+
+/* 主要内容 */
+#main {
+	width: -webkit-fill-available;
+	background-color: #F7F7F7;
+	overflow: hidden;
+}
+
+#main-hot {
+	height: 440px;
+	width: -webkit-fill-available;
+	align-content: center;
+	overflow: hidden;
+}
+
+#main-hot-inner {
+	width: 1200px;
+	height: 290px;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	/* 学到没.盒子居中的方法 */
+	margin-top: 75px;
+}
+
+#main-hot-title {
+	text-align: center;
+	overflow: hidden;
+}
+
+#main-hot-news0,
+#main-hot-news1 {
+	margin-top: 50px;
+	height: 150px;
+	overflow: hidden;
+}
+
+#main-hot-news0 a,
+#main-hot-news1 a {
+	color: #0067B7;
+}
+
+#main-hot-news0 p,
+#main-hot-news1 p {
+	margin-top: 23px;
+	font-size: 1.125rem;
+}
+
+.main-hot-news-changeX {
+	height: 150px;
+	width: 33.3%;
+}
+
+.main-hot-news-changeY {
+	width: 50%;
+	height: 150px;
+}
+
+#main-hot-news-0,
+#main-hot-news-3 {
+	float: left;
+}
+
+#main-hot-news-2,
+#main-hot-news-4 {
+	float: right;
+}
+
+#main-hot-news-1 {
+	margin-left: 33.3%;
+}
+
+.main-hot-news-img {
+	float: left;
+	width: 150px;
+}
+
+.main-hot-news-content {
+	margin-left: 150px;
+	width: -webkit-calc(1-150px);
+}
+
+/* 选项卡的切换部分 */
+#main-conclumn {
+	width: -webkit-fill-available;
+	height: 958px;
+	background-color: #FFFFFF;
+	padding-top: 5%;
+	overflow: hidden;
+}
+
+#main-conclumn-inner {
+	width: 1200px;
+	height: 805px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#main-conclumn-inner-content {
+	width: 64%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+#main-conclumn-inner-content-shop {
+	height: 60px;
+}
+
+#main-conclumn-inner-content-shop-list-title-X,
+#main-conclumn-inner-content-shop-list-title-Y {
+	height: 60px;
+	margin: 0;
+	list-style-type: none;
+	padding-left: 0;
+	overflow: hidden;
+}
+
+.main-conclumn-inner-content-shop-list-title-X-0,
+.main-conclumn-inner-content-shop-list-title-Y-0 {
+	font-size: 1.6rem;
+	font-weight: 600;
+	display: block;
+}
+
+.main-conclumn-inner-content-shop-list-item-X,
+.main-conclumn-inner-content-shop-list-item-Y {
+	float: left;
+	height: 53px;
+	line-height: 50px;
+	font-size: 28px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.main-conclumn-inner-content-shop-list-item-X {
+	width: 20%;
+}
+
+.main-conclumn-inner-content-shop-list-item-Y {
+	width: 25%;
+}
+
+.main-conclumn-inner-content-shop-list-item-X-checked,
+.main-conclumn-inner-content-shop-list-item-Y-checked {
+	border-bottom: 2px #0067B7 solid;
+	text-decoration: underline;
+}
+
+#main-conclumn-inner-content-box-X,
+#main-conclumn-inner-content-box-Y {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 700px;
+}
+
+.main-conclumn-inner-contents-X,
+.main-conclumn-inner-contents-Y {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 80%;
+	margin: 0;
+	font-size: 32px;
+	text-align: center;
+	z-index: 0;
+	opacity: 0;
+	/* 方法是:设置总的内容框均为透明 */
+	visibility: hidden;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.main-conclumn-inner-contents-X h2,
+.main-conclumn-inner-contents-Y h2 {
+	font-size: 2.125rem;
+	margin-top: 10%;
+	line-height: 1.181;
+	font-weight: bold;
+}
+
+.main-conclumn-inner-contents-X p,
+.main-conclumn-inner-contents-Y p {
+	font-size: 1.4rem;
+	font-weight: normal;
+	padding: 0 10%;
+}
+
+.main-conclumn-inner-contents-X a,
+.main-conclumn-inner-contents-Y a {
+	font-size: 1.3rem;
+	display: block;
+	color: #0067B7;
+}
+
+.main-conclumn-inner-contents-X img,
+.main-conclumn-inner-contents-Y img {
+	width: 100%;
+	height: 456px;
+	mix-width: 100%;
+	mix-height: 100%
+}
+
+.main-conclumn-inner-content-X-checked,
+.main-conclumn-inner-content-Y-checked {
+	/* 被选中的元素后的样式 */
+	z-index: 1;
+	opacity: 1;
+	visibility: visible;
+}
+
+/* 第三部分:你想要什么 */
+#main-service {
+	width: -webkit-fill-available;
+	background-color: #F7F7F7;
+	padding: 5% 0%;
+	overflow: hidden;
+}
+
+#main-service-inner {
+	width: 96%;
+	/* 网页测量值:1833px */
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#main-service-inner-content {
+	width: 1200px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+#main-service-inner-content a {
+	color: #1E73BE;
+}
+
+.main-service-inner-content-new {
+	margin-top: 5%;
+}
+
+#main-service-inner-content-title {
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.main-service-inner-content-news {
+	/* 这里是news的每个中盒子的样式 */
+	width: 33.3%;
+	height: 185px;
+	display: block;
+	overflow: hidden;
+}
+
+.main-service-inner-content-news-0,
+.main-service-inner-content-news-3,
+.main-service-inner-content-news-6 {
+	float: left;
+}
+
+.main-service-inner-content-news-1,
+.main-service-inner-content-news-4 {
+	float: right;
+}
+
+.main-service-inner-content-news-2,
+.main-service-inner-content-news-5,
+.main-service-inner-content-news-7 {
+	margin-left: 33.3%;
+}
+
+.main-service-inner-content-news-content {
+	width: 60%;
+	height: 100%;
+	/* 不需要同时浮动 */
+	margin-left: 40%;
+}
+
+.main-service-inner-content-news-content h3 {
+	padding: 10% 5%;
+	font-size: 1.5rem;
+}
+
+.main-service-inner-content-news-content p {
+	padding: 0% 5%;
+	font-size: 1.125rem;
+}
+
+.main-service-inner-content-news-icon {
+	width: 40%;
+	height: 185px;
+	float: left;
+	text-align: center;
+}
+
+.main-service-inner-content-news-icon img {
+	mix-width: 100%;
+	mix-height: 100%;
+	float: right;
+}
+
+/* 第四部分:下载方式 */
+#main-download {
+	width: -webkit-fill-available;
+	background-color: #3A5068;
+	overflow: hidden;
+}
+
+#main-download-inner {
+	width: 1200px;
+	height: 266px;
+	right: 0;
+	left: 0;
+	margin: auto;
+	padding: 2% 0%;
+	overflow: hidden;
+}
+
+.main-download-inner-content {
+	width: 95%;
+	height: 100%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	color: white;
+	position: relative;
+}
+
+.main-download-contents {
+	width: 33.3%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.main-download-inner-content-0 {
+	float: left;
+}
+
+.main-download-inner-content-1 {
+	float: right;
+}
+
+.main-download-inner-content-2 {
+	margin-left: 33.3%;
+}
+
+.main-download-inner-content-btn {
+	height: 60px;
+	width: 33.3%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+
+.downloadBtn {
+	background-color: #0067B8;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	height: 50px;
+	font-size: 1.125rem;
+	padding: 0% 5%;
+}
+
+/* .main-download-inner-content-btn button:hover{
+	background-color: #0060AC;
+	-webkit-transition: .5s;
+} */
+.main-download-inner-content-title {
+	padding: 5% 0%;
+	width: 100%;
+}
+
+.main-download-inner-content-title a {
+	font-size: 1.5rem;
+	color: white;
+	padding-top: 10%;
+}
+
+.main-download-inner-content p {
+	padding: 5% 3%;
+	font-size: 1.25rem;
+}
+
+/* 页面底部部分 */
+#footer {
+	width: -webkit-fill-available;
+	height: 400px;
+	background-color: #F2F2F2;
+	position: relative;
+}
+
+/* 第一部分:菜单 */
+#footer-menu {
+	width: -webkit-fill-available;
+	height: 284px;
+	color: #616161;
+	overflow: hidden;
+}
+
+#footer-menu-inner {
+	width: 84%;
+	height: 100%;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+.footer-menu-inners {
+	margin-top: 40px;
+	float: left;
+	width: 16.6%;
+}
+
+.footer-menu-inners {
+	line-height: 1.5;
+}
+
+.footer-menu-inners h4 {
+	font-size: 15px;
+}
+
+.footer-menu-inners a,
+#footer-bottonnav-inner-nav-list a {
+	font-size: 12px;
+	color: #616161;
+}
+
+/* .footer-menu-inners a:hover,#footer-bottonnav-inner-nav-list a:hover{
+	text-decoration: underline;
+	color: black;
+	-webkit-transition: .5s;
+} */
+/* 第二部分:底部导航 */
+#footer-bottonnav {
+	width: -webkit-fill-available;
+	height: 116px;
+	overflow: hidden;
+}
+
+#footer-bottonnav-inner {
+	width: 84%;
+	height: 100%;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+#footer-bottonnav-inner-Language {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+
+#footer-bottonnav-inner-Language p {
+	bottom: 0;
+	position: absolute;
+	font-size: 14px;
+	color: #616161;
+}
+
+/* #footer-bottonnav-inner-Language p:hover{
+	cursor: pointer;
+} */
+#footer-bottonnav-inner-nav {
+	width: 100%;
+	height: 50%;
+}
+
+#footer-bottonnav-inner-nav-list li {
+	float: right;
+	margin-right: 20px;
+	font-size: 14px;
+	color: #616161;
+}

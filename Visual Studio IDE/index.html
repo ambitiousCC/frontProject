@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Visual Studio IDE</title>
+		<link rel="stylesheet" type="text/css" href="css/max_799.css" media="screen and (max-width:799px)" />
+		<link rel="stylesheet" type="text/css" href="css/min_1200.css" media="screen and (min-width:1200px)" />
+		<link rel="stylesheet" type="text/css" href="css/range_800-1199.css" media="screen and (max-width:1199px) and (min-width:800px)" />
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<div id="nav">
+			<div id="nav-inner">
+				<!-- 左边logo图片 -->
+				<div id="nav-inner-left">
+					<a href="javascript:void(0)"><img src="images/header.png" alt="logo"></a>
+					<div id="nav-inner-left-text">
+						<a href="javascript:void(0)"><span class="nav-inner-left_"></span><span class="nav-inner-left_wd">Visual Studio</span></a>
+					</div>
+				</div>
+				<div id="nav-inner-right">
+					<div>
+						<ul id="nav-inner-right-0">
+							<li id="nav-inner-right-0-list" class="nav-inner-right-0-lists">
+								<a id="a" href="javascript:void(0)" class="nav-dropbtn" onClick="showList(this)" onfocus="colorsBtn(this)"
+								 onblur="colorsBtns(this)">所有Microsoft<span class="ui-front0"></span></a>
+								<div id="nav-dropdown-a" class="nav-dropdown-content">
+									<div id="nav-inner-right-0-list-0-dropdown-list-0" class="nav-list">
+										<ul id="lists0">
+											<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Microsoft</a></li>
+											<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Azure</a></li>
+											<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Office 365</a></li>
+											<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Dynamics 365</a></li>
+											<li><a href="javascript:void(0)" class="nav_dropdown_content_a">SQL</a></li>
+											<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Windows 10</a></li>
+										</ul>
+									</div>
+									<div id="nav-inner-right-0-list-0-dropdown-list-1" class="nav-list">
+										<div id="nav-inner-right-0-list-0-dropdown-1-0" class="lists1">
+											<h4>产品与服务</h4>
+											<ul>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Windows Server</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">企业移动性 + 安全性</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Power BI</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">团队</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Visual Studio</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Surface for Business</a></li>
+											</ul>
+										</div>
+										<div id="nav-inner-right-0-list-0-dropdown-1-1" class="lists1">
+											<h4>新兴技术</h4>
+											<ul>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">人工智能</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">物联网</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Azure 认知服务</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Quantum</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Microsoft HoloLens</a></li>
+											</ul>
+										</div>
+										<div id="nav-inner-right-0-list-0-dropdown-1-2" class="lists1">
+											<h4>开发人员与IT</h4>
+											<ul>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">文档</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">TechNet</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">开发人员网络</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Windows 开发人员中心</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Windows IT Pro Center</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">FastTrack</a></li>
+											</ul>
+										</div>
+										<div id="nav-inner-right-0-list-0-dropdown-1-3" class="lists1">
+											<h4>合作伙伴</h4>
+											<ul>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">合作伙伴网络</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">解决方案提供商</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">合作伙伴中心</a></li>
+											</ul>
+										</div>
+										<div id="nav-inner-right-0-list-0-dropdown-1-4" class="lists1">
+											<h4>行业</h4>
+											<ul>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">教育</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">金融服务</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">政府</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">健康</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">制造业与资源</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">零售</a></li>
+											</ul>
+										</div>
+										<div id="nav-inner-right-0-list-0-dropdown-1-5" class="lists1">
+											<h4>其他</h4>
+											<ul>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">安全性</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">许可</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">AppSource</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Azure Marketplace</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">活动</a></li>
+												<li><a href="javascript:void(0)" class="nav_dropdown_content_a">研究</a></li>
+											</ul>
+										</div>
+									</div>
+									<div id="nav-inner-right-0-list-0-dropdown-list-2" class="nav-list">
+										<h4><a href="javascript:void(0)">查看站点地图</a></h4>
+									</div>
+								</div>
+							</li>
+							<li id="nav-inner-right-0-list1" class="nav-inner-right-0-lists" title="Search">
+								<a href="javascript:void(0)" class="disdropbtn">搜索 <span class="ui-front0"></span></a>
+							</li>
+							<li id="nav-inner-right-0-list2" class="nav-inner-right-0-lists" title="Sign in to your account" onmouseover="spaOn()"
+							 onmouseout="spaOver()">
+								<a href="javascript:void(0)">Sign in</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="nav-inner-input">
+					<ul id="nav-inner-input-list">
+						<li id="nav-inner-input-list-0" class="nav-inner-input-list-x">
+							<a href="javascript:void(0)" class="disdropbtn">Visual Studio IDE</a>
+						</li>
+						<li id="nav-inner-input-list-1" class="nav-inner-input-list-x">
+							<a id="b" href="javascript:void(0)" class="nav-dropbtn" onClick="showList(this)" onfocus="colorsBtn(this)"
+							 onblur="colorsBtns(this)">功能<span class="ui-front1"></span></a>
+							<div id="nav-dropdown-b" class="nav-dropdown-content">
+								<div id="nav-inner-input-list-1-dropdown-list-0" class="lists2">
+									<h4>功能</h4>
+									<ul>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">开发</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Debug</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">测试</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">协作</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">扩展</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">所有功能</a></li>
+									</ul>
+								</div>
+								<div id="nav-inner-input-list-1-dropdown-list-1" class="lists2">
+									<h4>解决方案</h4>
+									<ul>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">移动</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Azure</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Web</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Windows</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">游戏</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">所有的解决方案</a></li>
+									</ul>
+								</div>
+								<div id="nav-inner-input-list-1-dropdown-list-2" class="lists2">
+									<h4>技术</h4>
+									<ul>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">.NET</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Python</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">Node.js</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">R</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">C++</a></li>
+										<li><a href="javascript:void(0)" class="nav_dropdown_content_a">所有技术</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li id="nav-inner-input-list-2" class="nav-inner-input-list-x">
+							<a id="c" href="javascript:void(0)" class="nav-dropbtn" onClick="showList(this)" onfocus="colorsBtn(this)"
+							 onblur="colorsBtns(this)">产品/服务<span class="ui-front1"></span></a>
+							<div id="nav-dropdown-c" class="nav-dropdown-content">
+								<div id="nav-inner-input-list-2-dropdown-list" class="lists3">
+									<ul>
+										<li><a href="javascript:void(0)" class="lists3_a"><span>Visual Studio Community</span></a></li>
+										<li><a href="javascript:void(0)" class="lists3_a"><span>Visual Studio Professional</span></a></li>
+										<li><a href="javascript:void(0)" class="lists3_a"><span>Visual Studio Enterprise</span></a></li>
+										<li><a href="javascript:void(0)" class="lists3_a"><span>比较产品</span></a></li>
+										<li><a href="javascript:void(0)" class="lists3_a"><span>定价</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li id="nav-inner-input-list-3" class="nav-inner-input-list-x">
+							<a href="javascript:void(0)" class="disdropbtn">下载</a>
+						</li>
+						<li id="nav-inner-input-list-4" class="nav-inner-input-list-x">
+							<a id="d" href="javascript:void(0)" class="nav-dropbtn" onClick="showList(this)" onfocus="colorsBtn(this)"
+							 onblur="colorsBtns(this)">支持<span class="ui-front1"></span></a>
+							<div id="nav-dropdown-d" class="nav-dropdown-content">
+								<div id="nav-inner-input-list-4-dropdown-list" class="lists4">
+									<ul>
+										<li><a href="javascript:void(0)" class="lists4_a"><span>获得支持</span></a></li>
+										<li><a href="javascript:void(0)" class="lists4_a"><span>开始使用</span></a></li>
+										<li><a href="javascript:void(0)" class="lists4_a"><span>博客</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li id="nav-inner-input-list-6" class="nav-inner-input-list-x">
+							<a href="javascript:void(0)" class="disdropbtn">订阅者访问</a>
+						</li>
+						<li id="nav-inner-input-list-5" class="nav-inner-input-list-x">
+							<a href="javascript:void(0)" id="disdropbtn_sp"><span>免费 Visual Studio</span></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 图片+切换功能 -->
+		<div id="header">
+			<div id="header-inner">
+				<div id="header-inner-content">
+					<div id="header-inner-content-icon">
+						<img src="images/icon.svg" alt="logo">
+						<h1>Visual Studio IDE</h1>
+					</div>
+					<div id="header-inner-content-guilde">
+						<h2>功能完备的集成开发环境(IDE)</h2>
+						<div class="changeX">
+							<h2>适用于Android、iOS、Windows、Web 和云</h2>
+						</div>
+						<div class="changeY">
+							<h2>适用于Android、iOS、macOS、Web 和云</h2>
+						</div>
+						<div id="header-inner-content-guilde-btn-0">
+							<button type="button" id="header-inner-content-guilde-btn-0-1" class="colorchange" onclick="gr('.changeX','.changeY');">Windows</button>
+							<button type="button" id="header-inner-content-guilde-btn-0-2" class="colorchange" onclick="gr('.changeY','.changeX');">macOS</button><!-- 点击按钮实现颜色的改变 -->
+						</div>
+						<div id="header-inner-content-guilde-dropdown">
+							<div class="changeX">
+								<button class="header-inner-content-guilde-dropdown-dropbtn" id="header-inner-content-guilde-dropdown-dropbtn0">下载Visual
+									Studio <span class="ui-front3"></span></button>
+							</div>
+							<div class="changeY">
+								<button class="header-inner-content-guilde-dropdown-dropbtn" id="header-inner-content-guilde-dropdown-dropbtn1">下载Visual
+									Studio for Mac <span class="ui-front3"></span></button>
+							</div>
+							<div id="header-inner-content-guilde-dropdown-list">
+								<div class="changeX" id="header-inner-content-guilde-dropdown-list0">
+									<a href="javascript:void(0)" class="onBtn">Community 2017</a>
+									<a href="javascript:void(0)" class="onBtn">Professional 2017</a>
+									<a href="javascript:void(0)" class="onBtn">Enterprise 2017</a>
+								</div>
+								<div class="changeY" id="header-inner-content-guilde-dropdown-list1">
+									<a href="javascript:void(0)" class="onBtn">Community 2017 for Mac</a>
+									<a href="javascript:void(0)" class="onBtn">Professional 2017 for Mac</a>
+									<a href="javascript:void(0)" class="onBtn">Enterprise 2017 for Mac</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="header-inner-photo">
+					<div class="changeX">
+						<img src="images/studio-windows.png" alt="Windows">
+					</div>
+					<div class="changeY">
+						<img src="images/studio-mac.png" alt="MacOS">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 页面主体部分 -->
+		<div id="main" class="changeHeight">
+			<!-- 第一部分：三张图片的概括事件 -->
+			<div id="main-hot">
+				<div id="main-hot-inner">
+					<div id="main-hot-title">
+						<h1>Visual Studio 新增功能</h1>
+					</div>
+					<div id="main-hot-news0" class="changeX">
+						<div id="main-hot-news-0" class="main-hot-news-changeX">
+							<div class="main-hot-news-img">
+								<img src="images/content-1.png" alt="content-1">
+							</div>
+							<div class="main-hot-news-content">
+								<h2><a href="javascript:void(0)">Visual Studio 2017</a></h2>
+								<p>功能完备的IDE，可提高任何应用的工作效率</p>
+							</div>
+						</div>
+						<div id="main-hot-news-2" class="main-hot-news-changeX">
+							<div class="main-hot-news-img">
+								<img src="images/content-3.png" alt="content-2">
+							</div>
+							<div class="main-hot-news-content">
+								<h2><a href="javascript:void(0)">Visual Studio 2017 Preview</a></h2>
+								<p>获取Visual Studio 2017 中尚未引入的最新功能</p>
+							</div>
+						</div>
+						<div id="main-hot-news-1" class="main-hot-news-changeX">
+							<div class="main-hot-news-img">
+								<img src="images/content-2.png" alt="content-3">
+							</div>
+							<div class="main-hot-news-content">
+								<h2><a href="javascript:void(0)">Visual Studio for Mac</a></h2>
+								<p>移动优先和云优先，专为Mac而打造</p>
+							</div>
+						</div>
+					</div>
+					<div id="main-hot-news1" class="changeY">
+						<div id="main-hot-news-3" class="main-hot-news-changeY">
+							<div class="main-hot-news-img">
+								<img src="images/content-1.png" alt="content-1">
+							</div>
+							<div class="main-hot-news-content">
+								<h2><a href="javascript:void(0)">Visual Studio 2017</a></h2>
+								<p>功能完备的IDE，可提高任何应用的工作效率</p>
+							</div>
+						</div>
+						<div id="main-hot-news-4" class="main-hot-news-changeY">
+							<div class="main-hot-news-img">
+								<img src="images/content-2.png" alt="content-3">
+							</div>
+							<div class="main-hot-news-content">
+								<h2><a href="javascript:void(0)">Visual Studio for Mac</a></h2>
+								<p>移动优先和云优先，专为Mac而打造</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第二部分：选项卡的切换功能 -->
+			<div id="main-conclumn">
+				<div id="main-conclumn-inner">
+					<div id="main-conclumn-inner-content">
+						<div id="main-conclumn-inner-content-shop">
+							<ul id="main-conclumn-inner-content-shop-list-title-X" class="changeX">
+								<li class="main-conclumn-inner-content-shop-list-item-X main-conclumn-inner-content-shop-list-item-X-checked"><span
+									 class="main-conclumn-inner-content-shop-list-title-X-0">开发</span></li>
+								<li class="main-conclumn-inner-content-shop-list-item-X"><span class="main-conclumn-inner-content-shop-list-title-X-0">Debug</span></li>
+								<li class="main-conclumn-inner-content-shop-list-item-X"><span class="main-conclumn-inner-content-shop-list-title-X-0">测试</span></li>
+								<li class="main-conclumn-inner-content-shop-list-item-X"><span class="main-conclumn-inner-content-shop-list-title-X-0">协作</span></li>
+								<li class="main-conclumn-inner-content-shop-list-item-X"><span class="main-conclumn-inner-content-shop-list-title-X-0">扩展</span></li>
+							</ul>
+							<ul id="main-conclumn-inner-content-shop-list-title-Y" class="changeY">
+								<li class="main-conclumn-inner-content-shop-list-item-Y main-conclumn-inner-content-shop-list-item-Y-checked"><span
+									 class="main-conclumn-inner-content-shop-list-title-Y-0">开发</span></li>
+								<li class="main-conclumn-inner-content-shop-list-item-Y"><span class="main-conclumn-inner-content-shop-list-title-Y-0">Debug</span></li>
+								<li class="main-conclumn-inner-content-shop-list-item-Y"><span class="main-conclumn-inner-content-shop-list-title-Y-0">测试</span></li>
+								<li class="main-conclumn-inner-content-shop-list-item-Y"><span class="main-conclumn-inner-content-shop-list-title-Y-0">协作</span></li>
+							</ul>
+						</div>
+						<div id="main-conclumn-inner-content-box-X" class="changeX">
+							<div class="main-conclumn-inner-contents-X main-conclumn-inner-content-X-checked">
+								<h2>快速导航、编写并修复你的代码</h2>
+								<p>Visual Studio使你能够准大到详细信息，例如调用结构、相关函数、嵌入和测试状态。还可以利用我们的功能来重构、识别和修复代码问题。<a href="javascript:void(0)">了解更多<span
+										 class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-0.png" alt="content-0">
+							</div>
+							<div class="main-conclumn-inner-contents-X">
+								<h2>轻松调试，探查和诊断</h2>
+								<p>使用Visual studid 调试程序，通过代码的历史数据可以跨语言快速查找并修复bug，无论是在本地还是在远程。利用分析工具发现并诊断性能问题，无需离开调试工作流。<a href="javascript:void(0)">了解更多<span
+										 class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-1.png" alt="content-1">
+							</div>
+							<div class="main-conclumn-inner-contents-X">
+								<h2>使用全面的测试工具编写高质量代码</h2>
+								<p>Visual Studio 测试工具帮助你交付高质量的软件。使用这些工具规则、执行和监视你的全部测试工作。通过质量指标、指标和全面的测试状态报告来掌握你的测试规则。<a href="javascript:void(0)">了解更多<span
+										 class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-2.png" alt="content-2">
+							</div>
+							<div class="main-conclumn-inner-contents-X">
+								<h2>使用版本控制、提供敏捷性、高效协作</h2>
+								<p>在任意提供商(包括GitHub)托管的Git存储库中管理你的源代码。也可以使用Azure DevOps管理整个项目的代码、bug和工作项。<a href="javascript:void(0)">了解更多<span
+										 class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-3.png" alt="content-3">
+							</div>
+							<div class="main-conclumn-inner-contents-X">
+								<h2>自定义Visual Studio</h2>
+								<p>通过利用Microsoft、合作伙伴和社区提供的工具、控件和模板，扩展Visual Studio功能。通过构建你自己的扩展来根据你的喜好进行进一步的操作和自定义。<a href="javascript:void(0)">了解更多<span
+										 class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-4.png" alt="content-4">
+							</div>
+						</div>
+						<div id="main-conclumn-inner-content-box-Y" class="changeY">
+							<div class="main-conclumn-inner-contents-Y main-conclumn-inner-content-Y-checked">
+								<h2>快速导航、编写并修复你的代码</h2>
+								<p>Visual Studio for
+									Mac使你能够准确、高效地编写代码，并且不会丢失当前的文件上下文。你可以轻松地放大到详细信息，例如调用结构、相关函数、签入和测试状态。还可以利用我们的功能来重构、识别和修复代码问题。<a href="#">了解更多<span
+										 class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-a.png" alt="content-a">
+							</div>
+							<div class="main-conclumn-inner-contents-Y">
+								<h2>轻松调试，探查和诊断</h2>
+								<p>使用Visual studid 调试程序，可以跨语言快速找到并修复bug。使用分析工具找到并诊断性能问题。<a href="javascript:void(0)">了解更多<span class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-b.png" alt="content-b">
+							</div>
+							<div class="main-conclumn-inner-contents-Y">
+								<h2>使用测试工具编写优质代码</h2>
+								<p>使用Visual Studio for Mac 的集成测试运行程序，可以运行并调试单元测试和自动化UI测试。<a href="javascript:void(0)">了解更多<span class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-c.png" alt="content-c">
+							</div>
+							<div class="main-conclumn-inner-contents-Y">
+								<h2>使用版本控制、提供敏捷性、高效协作</h2>
+								<p>在任意提供程序（包括GitHub和Azure DevOps）托管的Git存储库中管理源代码。<a href="javascript:void(0)">了解更多<span class="ui-front2"></span></a></p>
+								<img src="images/main-conclumn-inner-content-d.png" alt="content-d">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第三部分：你想要什么？ -->
+			<div id="main-service" class="changeHeight">
+				<div id="main-service-inner" class="changeHeight">
+					<div id="main-service-inner-content" class="changeHeight">
+						<div id="main-service-inner-content-title">
+							<h2>你想要构建什么？</h2>
+						</div>
+						<div class="main-service-inner-content-new changeX">
+							<div class="main-service-inner-content-news-0 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_5.png" alt="Windows"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">Windows</a></h3>
+									<p>开发应用和游戏以覆盖运行Windows的所有设备</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-1 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_1.png" alt="Azure"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">Azure应用</a></h3>
+									<p>生成、管理和部署可缩放到Azure的云应用</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-2 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_2.png" alt="Web"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">Web应用</a></h3>
+									<p>使用功能强大的开放式工具和可扩展生态系统开发新式Web应用</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-3 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_6.png" alt="Office"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">Office</a></h3>
+									<p>使用各种工具执行所有类型的Office开发</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-4 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_3.png" alt="game"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">游戏</a></h3>
+									<p>使用顶尖的引擎和框架创建跨品台游戏</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-5 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_8.png" alt="expend"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">扩展</a></h3>
+									<p>编写自己的Visual Studio扩展</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-6 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_7.png" alt="data"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">Database数据(数据库)</a></h3>
+									<p>轻松开发和部署SQL Server和Azure SQL数据库</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-7 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_0.png" alt="app"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">移动应用程序</a></h3>
+									<p>创建面向Android、iOS和Windows的本机或混合应用</p>
+								</div>
+							</div>
+						</div>
+						<div class="main-service-inner-content-new changeY">
+							<div class="main-service-inner-content-news-0 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_0.png" alt="app"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">移动应用程序</a></h3>
+									<p>创建定目标到Andriod和iOS的跨平台应用</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-1 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_2.png" alt="Web"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">Web应用</a></h3>
+									<p>使用ASPNET Core开放新式Web应用</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-2 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_1.png" alt="Azure"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">Azure应用</a></h3>
+									<p>生成、管理和部署可缩放到Azure的云应用</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-3 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_4.png" alt="macOS"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">macOS</a></h3>
+									<p>使用C#和F#开发适用于Mac的应用和游戏</p>
+								</div>
+							</div>
+							<div class="main-service-inner-content-news-5 main-service-inner-content-news">
+								<div class="main-service-inner-content-news-icon">
+									<a href="javascript:void(0)"><img src="images/news-icon_3.png" alt="game"></a>
+								</div>
+								<div class="main-service-inner-content-news-content">
+									<h3><a href="javascript:void(0)">游戏</a></h3>
+									<p>使用顶尖的引擎和框架创建跨品台游戏</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 第四部分：下载方式 -->
+			<div id="main-download">
+				<div id="main-download-inner">
+					<div class="main-download-inner-content changeX">
+						<div class="main-download-inner-content-0 main-download-contents">
+							<div class="main-download-inner-content-title">
+								<a href="javascript:void(0)">Visual Studio Community 2017</a>
+							</div>
+							<p>Free,fully-featured IDE for students,open-source and individual developers</p>
+							<div class="main-download-inner-content-btn">
+								<button type="button" class="downloadBtn">Free download <span class="ui-front3"></span></button>
+							</div>
+						</div>
+						<div class="main-download-inner-content-1 main-download-contents">
+							<div class="main-download-inner-content-title">
+								<a href="javascript:void(0)">Visual Studio Professional 2017</a>
+							</div>
+							<p>Professional developer tools,services,and subscription benefits for small teams</p>
+							<div class="main-download-inner-content-btn">
+								<button type="button" class="downloadBtn">Free trial <span class="ui-front3"></span></button>
+							</div>
+						</div>
+						<div class="main-download-inner-content-2 main-download-contents">
+							<div class="main-download-inner-content-title">
+								<a href="javascript:void(0)">Visual Studio Enterprise 2017</a>
+							</div>
+							<p>End-to-end solution to meet demanding quality and scale needs of teams of all sizes</p>
+							<div class="main-download-inner-content-btn">
+								<button type="button" class="downloadBtn">Free trial <span class="ui-front3"></span></button>
+							</div>
+						</div>
+					</div>
+					<div class="main-download-inner-content changeY">
+						<div class="main-download-inner-content-0 main-download-contents">
+							<div class="main-download-inner-content-title">
+								<a href="javascript:void(0)">Visual Studio Community for Mac</a>
+							</div>
+							<p>Free,fully-featured IDE for students,open-source and individual developers</p>
+							<div class="main-download-inner-content-btn">
+								<button type="button" class="downloadBtn">Download <span class="ui-front3"></span></button>
+							</div>
+						</div>
+						<div class="main-download-inner-content-1 main-download-contents">
+							<div class="main-download-inner-content-title">
+								<a href="javascript:void(0)">Visual Studio Professional for Mac</a>
+							</div>
+							<p>Professional developer tools,services,and subscription benefits for small teams</p>
+							<div class="main-download-inner-content-btn">
+								<button type="button" class="downloadBtn">Download <span class="ui-front3"></span></button>
+							</div>
+						</div>
+						<div class="main-download-inner-content-2 main-download-contents">
+							<div class="main-download-inner-content-title">
+								<a href="javascript:void(0)">Visual Studio Enterprise for Mac</a>
+							</div>
+							<p>End-to-end solution to meet demanding quality and scale needs of teams of all sizes</p>
+							<div class="main-download-inner-content-btn">
+								<button type="button" class="downloadBtn">Download <span class="ui-front3"></span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 页面底部部分 -->
+		<div id="footer">
+			<!-- 第一部分：菜单 -->
+			<div id="footer-menu">
+				<div id="footer-menu-inner">
+					<div id="footer-menu-inner-0" class="footer-menu-inners">
+						<h4>新增内容</h4>
+						<ul>
+							<li><a href="javascript:void(0)">全新Surface Pro 6</a></li>
+							<li><a href="javascript:void(0)">全新Surface Laptop 2</a></li>
+							<li><a href="javascript:void(0)">全新Surface Go</a></li>
+							<li><a href="javascript:void(0)">Xbox One X</a></li>
+							<li><a href="javascript:void(0)">Xbox One S</a></li>
+							<li><a href="javascript:void(0)">Windows 10应用程序</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-inner-1" class="footer-menu-inners">
+						<h4>应用商店和支持</h4>
+						<ul>
+							<li><a href="javascript:void(0)">账户个人资料</a></li>
+							<li><a href="javascript:void(0)">下载中心</a></li>
+							<li><a href="javascript:void(0)">订单跟踪</a></li>
+							<li><a href="javascript:void(0)">支持</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-inner-2" class="footer-menu-inners">
+						<h4>教育</h4>
+						<ul>
+							<li><a href="javascript:void(0)">Microsoft 教育领域</a></li>
+							<li><a href="javascript:void(0)">适合学生的Office</a></li>
+							<li><a href="javascript:void(0)">适用于学校的 Office 365</a></li>
+							<li><a href="javascript:void(0)">Microsoft Azure 教育领域</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-inner-3" class="footer-menu-inners">
+						<h4>企业</h4>
+						<ul>
+							<li><a href="javascript:void(0)">企业</a></li>
+							<li><a href="javascript:void(0)">数据平台</a></li>
+							<li><a href="javascript:void(0)">查找解决方案提供商</a></li>
+							<li><a href="javascript:void(0)">Microsoft 合作伙伴资源</a></li>
+							<li><a href="javascript:void(0)">Microsoft Appsource</a></li>
+							<li><a href="javascript:void(0)">制造业与资源</a></li>
+							<li><a href="javascript:void(0)">金融服务</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-inner-4" class="footer-menu-inners">
+						<h4>开发人员</h4>
+						<ul>
+							<li><a href="javascript:void(0)">Microsoft Visual Studio</a></li>
+							<li><a href="javascript:void(0)">Windows 开发人员中心</a></li>
+							<li><a href="javascript:void(0)">开发人员网络</a></li>
+							<li><a href="javascript:void(0)">TechNet</a></li>
+							<li><a href="javascript:void(0)">Microsoft 开发人员计划</a></li>
+							<li><a href="javascript:void(0)">通道9</a></li>
+							<li><a href="javascript:void(0)">Office 开发人员中心</a></li>
+						</ul>
+					</div>
+					<div id="footer-menu-inner-5" class="footer-menu-inners">
+						<h4>公司</h4>
+						<ul>
+							<li><a href="javascript:void(0)">招贤纳士</a></li>
+							<li><a href="javascript:void(0)">关于Microsoft</a></li>
+							<li><a href="javascript:void(0)">公司新闻</a></li>
+							<li><a href="javascript:void(0)">Microsoft隐私</a></li>
+							<li><a href="javascript:void(0)">投资人</a></li>
+							<li><a href="javascript:void(0)">安全性</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 第二部分：底部导航 -->
+			<div id="footer-bottonnav">
+				<div id="footer-bottonnav-inner">
+					<div id="footer-bottonnav-inner-Language">
+						<p><span class="ui-front4"></span>Chinese,Simplified(简体中文)</p>
+					</div>
+					<div id="footer-bottonnav-inner-nav">
+						<ul id="footer-bottonnav-inner-nav-list">
+							<li>© Mocrosoft 2018</li>
+							<li><a href="javascript:void(0)">关于我们的广告</a></li>
+							<li><a href="javascript:void(0)">商标</a></li>
+							<li><a href="javascript:void(0)">使用条款</a></li>
+							<li><a href="javascript:void(0)">隐私Cookie</a></li>
+							<li><a href="javascript:void(0)">请联系我们</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="JavaScript/仿站.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

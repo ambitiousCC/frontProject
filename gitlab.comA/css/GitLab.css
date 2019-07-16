@@ -1,0 +1,439 @@
+		/* 总体样式设置 */
+*{/*删除内外边距*/
+	margin: 0;
+	padding: 0;
+}
+ @font-face {/*声明字体*/
+		font-family:'icomoon';/*自定义名称*/
+		src: url('../fonts/icomoon.eot?7kkyc2');
+		src: url('../fonts/icomoon.eot?7kkyc2#iefix')format('embedded-opentype'),
+			url('../fonts/icomoon.ttf?7kkyc2')format('truetype'),
+			url('../fonts/icomoon.svg?7kkyc2#icomoon')format('svg');
+		font-weight: normal;/*字体粗细正常*/
+		font-style: normal;/*字体正常*/
+ }
+ span{/*字体符号样式*/
+	 font-family:"icomoon";
+	 color: #7c6fa3;
+ }
+body{/*总体背景颜色*/
+	background-color:white;
+}
+p{/*总体文本字体大小*/
+	font-size: 18px;
+}
+		/* 子样式 */
+.header{/*导航栏*/
+	position: fixed;
+	height: 60px;
+	width: 1920px;
+	background-color:white;
+	z-index: 999;
+}
+.inner{/*导航栏核心框*/
+	width: 1350px;
+	height: 60px;
+	background-color: #ffffff;
+	margin:0 auto ;
+	line-height:60px;
+	left: 100px;
+	border-left: 0 ;
+	position: fixed;
+}
+.logo{/*导航栏logo*/
+	float: left;
+	height: 60px;
+}
+.nav{
+	float: right;
+}
+.nav li{/*导航栏取消小点*/
+	list-style: none;
+}
+.nav li{
+	float: left;
+	position: relative;
+}
+.nav li a{/*导航栏鼠标在外的样子*/
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 60px;
+	display: inline-block;/*转换*/
+	color: #777777;
+	text-decoration: none;
+	padding:0px 20px;/*两个为上下+左右，三个为上左右下，四个为顺时针*/
+}
+.nav li a:hover{/*导航栏鼠标放上去的样子*/
+	background-color:#f2f2f2 ;
+	color: #6c5e98;
+}
+.drop {/*下拉表单样式*/
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	width: 240px;
+	background: #ffffff;
+	display: none;
+	line-height: 60px;
+	padding: 10px;
+	text-align:left;
+}
+.nav li:hover div.drop{
+	display: block;
+}
+.drop a{/*表单内容宽度*/
+	width: 200px;
+}
+		/* 导航栏部分结束 */
+.neck{/*轮播图背景及样式*/
+	height: 580px;
+	width: -webkit-fill-available;
+	position: absolute;
+	margin-top: 60px;
+	background-image: url(../images/1.jpg);
+	background-repeat: no-repeat;
+}
+.neck-clo2-hd{
+	height: 605px;
+	position: relative;
+}
+.arr-l,.arr-r{/*左右向按钮*/
+	position: absolute;
+	top: 92.5%;
+	margin-top: -300px;
+	height: 60px;
+	width: 40px;
+	text-align: center;
+	line-height: 60px;
+	font-family: "icomoon";
+	font-size: 35px;
+	color: #b6b7b9;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.arr-l{/*这里差点翻车，注释打了一半的悲剧*/
+	left: 20px;
+}
+.arr-r{
+	right:20px ;
+}
+.neck-clo2-hd a:hover{
+	color: white;
+	background: rgba(0,0,0,0.3);/*半透明*/
+}
+.neck-clo2-hd ol{/*轮播图底部交换按钮*/
+	position: absolute;
+	bottom: 52px;
+	left: 50%;
+	margin-left:-190px ;
+	width: 380px;
+	height: 2.5px;
+	border-radius: 1.25px;
+}
+.neck-clo2-hd ol li{/*轮播图底部交换按钮样式*/
+	width: 20px;
+	height: 2.5px;
+	background-color: #a6a7aa;
+	float: left;
+	margin: 0px 28px;
+	cursor: pointer;
+}
+.neck-clo2-hd .current{
+	background-color: white;
+}
+.neck-clo1{/*轮播图上字体部分*/
+	align-content: center;
+	box-sizing: border-box;
+	color: rgb(50,50,50);/*背景透明*/
+	display: flex;
+	flex-direction: column;
+	margin: 40px 120px 40px 120px;
+	padding-right: 0px;
+	padding-top: 100px;
+	width: 550px;
+	height: 500px;
+	float: right;
+	z-index: 1;
+}
+.neck-clo1 a{/*字体链接样式*/
+	text-decoration: none;
+	color: white;
+	z-index: 9;
+}
+.neck-clo1-title {
+	font-weight: 400;
+	font-size: 37px;
+}
+.neck-clo1-content{
+	font-weight: 400;
+	font-size: 18px;
+	width: 520px;
+	color: #c1bebd;
+	align-items: center;
+	margin-top: 20px;
+	z-index: 9;
+}
+.neck-clo1-change{
+	margin-top: 12px;
+	z-index: 9;
+}
+.neck-clo3,.neck-clo3-p,.neck-clo3-ph{/*轮播图上插入图片部分*/
+	width:650px;
+	height: 450px;
+	align-items: center;
+	float: right;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding-top: 40px;
+	z-index: 99;
+}
+.neck-clo3-ph{/*轮播图插入图片样式*/
+	height: 380px;
+	width: 350px;
+	float: left;
+}
+.neck-clo-inner{/*轮播图插入图片部分核心框*/
+	width: 1350px;
+	height: 380px;
+	margin:0 auto ;
+	left: 100px;
+	border-left: 0 ;
+	right: 100px;
+}
+#neck-clo1-btn{/*轮播图按钮样式*/
+	background-color: orangered;
+	width: 200px;
+	height: 50px;
+	margin-top: 30px;
+	color: white;
+	font-size: 18px;
+	cursor: pointer;
+	outline-width:medium;/*整个轮廓的宽度*/
+	outline-color:rgba(0,0,0,0);/*轮廓的颜色*/
+	border-radius: 0.5em;/*按钮四角弧度*/
+}
+#neck-clo1-btn:hover{/*轮播图按钮变色*/
+    background-color: red;
+}
+.neck-clo1-b{/*轮播图不同文本字体上下距离*/
+	margin-top: 15px;
+	z-index: 9;
+}
+p.neck-clo5{/*轮播图不同文本字体上下距离*/
+	margin-top: 20px;
+}
+		/* 轮播图部分结束 */
+.chest{/*介绍部分样式*/
+	height:650px;
+	width: -webkit-fill-available;
+	position: absolute;
+	margin-top: 640px;
+	border-color: #000000;
+	background-color: #f9f9f9;
+}
+.chest-inner{/*介绍部分核心框*/
+	width: 1200px;
+	height: 470px;
+	background-color:#f9f9f9;
+	margin-left:200px;	
+	line-height: 2.5;
+}
+.chest-fi{/*框1*/
+	width: 360px;
+	float: left;
+	margin-top: 80px;
+}
+.chest-se{/*框2*/
+	width: 360px;
+	margin-left: 400px;
+	padding-top: 80px;
+}
+.chest-th{/*框3*/
+	width:360px;
+	float: right;
+	margin-right: 40px;
+	margin-top: 80px;
+}
+.chest-inner h1{/*介绍标题们*/
+	font-weight: 500;
+}
+.chest-inner p{/*介绍内容们*/
+	font-style: italic;
+	font-size: 18px;
+	font-weight: 500;
+	color: #777777;
+}
+.chest-inner ul{/*介绍点点们*/
+	padding-left: 40px;
+}
+		/* 介绍部分结束 */
+.waist{/*图文介绍按钮部分样式*/
+	height: 450px;
+	position: absolute;
+	margin-top: 1290px;
+	background-color:#f9f9f9;
+	width: -webkit-fill-available;
+}
+.waist-total{/*******核心框*/
+	background-color: white;
+	width: 1200px;
+	height: 450px;
+	margin-left: 150px;	
+}
+.waist-tot-bd{/* 文字主体部分 */
+	width: 420px;
+	height: 450px;
+	float: left;
+}
+.waist-tot-bd-tlt{/*文字标题*/
+	font-size: 30px;
+	font-weight: 500;
+	padding: 40px 30px 30px 40px;
+}
+.waist-tot-bd-txt{/*文字*/
+	font-size: 16px;
+	padding:0px 40px;
+	line-height: 1.5;
+}
+.waist-tot-bd-b{/*按钮盒*/
+	padding-left: 40px;
+	padding-top: 20px;
+}
+#waist-tot-bd-btn{/*按钮*/
+	background-color: #554488;
+	width: 150px;
+	height: 50px;
+	font-size: 16px;
+	color: white;
+	cursor: pointer;
+	outline-width:medium;/*整个轮廓的宽度*/
+	outline-color:rgba(0,0,0,0);/*轮廓的颜色*/
+	border-radius: 0.5em;/*按钮四角弧度*/
+	/* 其实我是复制的上面的按钮 */
+}
+#waist-tot-bd-btn:hover{/*鼠标放上去按钮样式*/
+	background-color: #403368
+}
+.waist-tot-ph{/*右边插入图片*/
+	float: right;
+	border-color: black;
+}
+.waist-tot-ph img{/*图片大小整理*/
+	width: 650px;
+	height: 314px;
+	padding: 80px 65px;
+}
+		/* 图文介绍按钮部分结束 */
+.leg{/*底部介绍总体样式*/
+	margin-top: 1740px;
+	position: absolute;
+	background-color:#f9f9f9;
+	width: -webkit-fill-available;
+	height: 725px;
+	color: white;
+}
+.leg-tot-lg{/*插入logo图片*/
+	width: -webkit-fill-available;
+	background-color:white;
+	height: 80px;
+	text-align: center;
+	margin-top: 80px;
+}
+.leg-tot-lg img{/*logo图片样式*/
+	width: 65px;
+	height: 60px;
+	padding-top: 45px;
+}
+.leg-tot-bd-inner{/*核心框背景色*/
+	background-color: #6b4fbb;
+}
+.leg-tot-bd-p{/*四个小logo的外包装盒*/
+	background-color: #6b4fbb;
+	width: -webkit-fill-available;
+	height: 80px;
+}
+.leg-tot-bd-p-lg{/*内包装盒*/
+	float: right;
+	text-align: center;
+	width: 1150px;
+	height: 80px;
+	margin-top: 80px;
+	margin-right: 200px;
+	background-color:#6b4fbb;
+}
+.logos{/*logo总的样式*/
+	text-align: center;
+	padding-left: 500px;
+}
+.logos a{/*logo链接样式*/
+	text-decoration: none;
+	display: inline-block;
+}
+.logos li{/*logo排列*/
+	list-style: none;
+	float: left;
+	width: 45px;
+	height: 35px;
+	background:#6b4fbb;
+}
+.logos span{/*logo大小颜色样式*/
+	font-size: 28px;
+	color: white;
+}
+.logos span:hover{/*鼠标指示logo*/
+	color: orange;
+}
+.leg-tot-bd-txt{/*主板内容*/
+	width: 1200px;
+	height: 400px;
+	background-color: #6b4fbb;
+	margin-top: 80px;
+	margin-left: 145px;
+}
+.leg-tot-bd-txt li{/*无序小点点取消*/
+	list-style: none;
+}
+.leg-tot-bd-txt a{/*链接style*/
+	text-decoration: none;
+	color: white;
+}
+.leg-tot-bd-txt a:hover{
+	color: #f69f2a;
+}
+.leg-tot-bd-txt-1,.leg-tot-bd-txt-2,.leg-tot-bd-txt-3,.leg-tot-bd-txt-4,.leg-tot-bd-txt-5{/*文本小盒子*/
+	width: 180px;
+	height: 260px;
+	float: left;
+	padding-left: 60px;
+}
+.leg-tot-bd-txt h2{/*文本主标题*/
+	font-size: 22px;
+}
+.leg-tot-bd-txt ul{/*文本内容*/
+	padding-top: 20px;
+	line-height: 1.8;
+	font-size: 15px;
+}
+		/* 底部介绍结束 */
+.foot{/* 页脚总样式 */
+	position: absolute;
+	margin-top: 2460px;
+	width: -webkit-fill-available;
+	height: 35px;
+	background-color:#554488;
+}
+.foot-txt{/* 页脚文字 */
+	text-align: center;
+	font-size: 13.5px;
+	line-height:35px;
+	color: white;
+}
+.foot-txt a{
+	color: white;
+}
+.foot-txt a:hover{/* 鼠标放上下划线消失 */
+	text-decoration: none;
+}
+		/* 页脚结束TT */

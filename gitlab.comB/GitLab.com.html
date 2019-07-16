@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sign in Gitlab</title>
+		<link type="text/css" rel="stylesheet" href="css/GitLab.com.css" />
+	</head>
+	<body>
+		<div id="header">
+			<div id="header-ph">
+				<img src="images/111.png" alt="GitLab的logo">
+			</div>
+		</div>a
+		<!-- 导航栏 -->
+		<div id="content">
+			<!-- 左侧文字 -->
+			<div id="txt">
+				<h1>GitLab.com</h1>
+				<p>
+					GitLab.com offers free unlimited(private) repositories
+					and unlimited collaborators.
+				</p>
+				<ul>
+					<li>
+						<a href="https://gitlab.com/explore/projects/trending" target="_blank">
+							Explore projects on
+						</a>(no login needed)
+					</li>
+					<li>
+						<a href="https://about.gitlab.com/pricing/#gitlab-com" target="_blank">
+							More information about GitLab.com
+						</a>
+					</li>
+					<li>
+						<a href="https://gitlab.com/gitlab-com/support-forum/issues" target="_blank">
+							GitLab.com Support Forum
+						</a>
+					</li>
+					<li>
+						<a href="https://about.gitlab.com/" target="_blank">
+							GitLab Homepage
+						</a>
+					</li>
+				</ul>
+				<p>
+					By signing up for and by signing in to this service you accept our:
+				</p>
+				<ul>
+					<li>
+						<a href="https://about.gitlab.com/privacy/" target="_blank">
+							Privacy policy
+						</a>
+					</li>
+					<li>
+						<a href="https://about.gitlab.com/terms/#gitlab_com" target="_blank">
+							GitLab.com Terms.
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 右侧表单 -->
+			<div>
+				<h2>
+					<span class="xx">
+						Sign in
+					</span>
+					<span class="xy">
+						Register
+					</span>
+				</h2>
+			</div>
+			<div id="sign">
+				<form action="http://www.gitlab.com/register.php" method="post" class="sign-form">
+					Full name:<br />
+					<input type="text" name="Full name" title="This field is required." style="width: 340px;height: 34px;" /><br />
+					Use name:<br />
+					<input type="text" name="Use name" title="Please create a username with only alphanumeric characters." style="width: 340px;height: 34px;" /><br />
+					Email:<br />
+					<input type="email" name="Email" title="Please provide a valid email address." style="width: 340px;height: 34px;" /><br />
+					Email confirmation:<br />
+					<input type="email" name="Email confirmation" title="Please retype the email address." style="width: 340px;height: 34px;" /><br />
+					Password:<br />
+					<input type="password" name="Password" title="Minimum length is 8 characters." style="width: 340px;height: 34px;" /><br />
+					<span id="sign-txt-dg">
+						Minimum length is 8 characters
+					</span>
+				</form>
+				<p id="sign-txt">
+					<input type="checkbox" name="extras[]" value="oa" />
+					I accept the
+					<a href="https://gitlab.com/-/users/terms">
+						Terms of Service and Privacy Policy
+					</a><br />
+					<input type="checkbox" name="extras[]" value="ob" checked="checked" />
+					I'd like to receive updates via email about GitLab.
+				</p>
+				<p>
+					<input type="submit" value="Register" id="submit" title="Please baidu!^-^" /><br />
+				</p>
+			</div>
+			<div id="signs">
+				Sign in with<br />
+				<a href="https://gitlab.com/users/auth/google_oauth2">
+					<input type="button" name="" id="signs-btn1" value="" />
+				</a>
+				<a href="https://gitlab.com/users/auth/twitter">
+					<input type="button" name="" id="signs-btn2" value="" />
+					</button><br />
+				</a>
+				<a href="https://gitlab.com/users/auth/github">
+					<input type="button" name="" id="signs-btn3" value="" />
+					</button>
+				</a>
+				<a href="https://gitlab.com/users/auth/bitbucket">
+					<input type="button" name="" id="signs-btn4" value="" />
+					</button><br />
+				</a>
+				<input type="checkbox" name="extras[]" value="oc" />
+				Remeber me
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div id="footer">
+			<p>
+				<a class="z" href="https://gitlab.com/explore" target="_blank">
+					Explore
+				</a>
+				<a class="z" href="https://gitlab.com/help" target="_blank">
+					Help
+				</a>
+				<a id="footer-td" href="https://about.gitlab.com/" target="_blank">
+					About GitLab
+				</a>
+			</p>
+		</div>
+	</body>
+</html>
